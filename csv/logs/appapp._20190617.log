@@ -1,0 +1,117 @@
+2019-06-17 12:41:47,963 INFO com.batch.mongo.csv.entity.config.MongoToCsv [main] Starting MongoToCsv v0.0.1-SNAPSHOT on BLRL58331 with PID 18364 (C:\DevelopmentTech\Aru\spring\csv\target\csv-0.0.1-SNAPSHOT.jar started by sdevireddy in C:\DevelopmentTech\Aru\spring\csv)
+2019-06-17 12:41:47,966 DEBUG com.batch.mongo.csv.entity.config.MongoToCsv [main] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-06-17 12:41:47,974 INFO com.batch.mongo.csv.entity.config.MongoToCsv [main] No active profile set, falling back to default profiles: default
+2019-06-17 12:41:49,294 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-17 12:41:49,298 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-17 12:41:49,340 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2019-06-17 12:41:49,381 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-17 12:41:49,381 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-17 12:41:49,383 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-06-17 12:41:49,969 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$60123c80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 12:41:51,364 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8888 (http)
+2019-06-17 12:41:51,587 INFO org.springframework.web.context.ContextLoader [main] Root WebApplicationContext: initialization completed in 3508 ms
+2019-06-17 12:41:54,630 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-17 12:41:57,300 INFO com.batch.mongo.csv.entity.config.ApplicationConfig [main] Mongo DB data fetching inititated
+2019-06-17 12:41:57,565 INFO com.batch.mongo.csv.entity.config.ApplicationConfig [main] Writer records to csv file
+2019-06-17 12:41:58,573 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-17 12:41:58,679 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-17 12:41:58,919 WARN org.springframework.boot.autoconfigure.batch.JpaBatchConfigurer [main] JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2019-06-17 12:41:58,923 INFO org.springframework.batch.core.repository.support.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: DERBY
+2019-06-17 12:41:58,965 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2019-06-17 12:41:59,528 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-17 12:41:59,534 INFO com.batch.mongo.csv.entity.config.MongoToCsv [main] Started MongoToCsv in 12.264 seconds (JVM running for 13.121)
+2019-06-17 12:41:59,538 INFO org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner [main] Running default command line with: [--spring.config.location=file:config.properties,classpath:application.properties]
+2019-06-17 12:41:59,893 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher [main] Job: [FlowJob: [name=exportUserJob]] launched with the following parameters: [{-spring.config.location=file:config.properties,classpath:application.properties, run.id=1}]
+2019-06-17 12:42:00,043 INFO org.springframework.batch.core.job.SimpleStepHandler [main] Executing step: [step1]
+2019-06-17 12:42:00,304 DEBUG org.springframework.data.mongodb.core.MongoTemplate [main] find using query: { "dob" : { "$gt" : { "$date" : 1573065000000 }, "$lt" : { "$date" : 1573151400000 } } } fields: Document{{}} for class: class com.batch.mongo.csv.entity.MongoDBEntity in collection: information
+2019-06-17 12:42:00,492 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher [main] Job: [FlowJob: [name=exportUserJob]] completed with the following parameters: [{-spring.config.location=file:config.properties,classpath:application.properties, run.id=1}] and the following status: [COMPLETED]
+2019-06-17 12:42:00,512 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-17 12:42:00,528 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-06-17 12:42:21,670 INFO com.batch.mongo.csv.entity.config.MongoToCsv [main] Starting MongoToCsv v0.0.1-SNAPSHOT on BLRL58331 with PID 17488 (C:\DevelopmentTech\Aru\spring\csv\target\csv-0.0.1-SNAPSHOT.jar started by sdevireddy in C:\DevelopmentTech\Aru\spring\csv)
+2019-06-17 12:42:21,674 DEBUG com.batch.mongo.csv.entity.config.MongoToCsv [main] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-06-17 12:42:21,675 INFO com.batch.mongo.csv.entity.config.MongoToCsv [main] No active profile set, falling back to default profiles: default
+2019-06-17 12:42:23,230 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-17 12:42:23,234 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-17 12:42:23,277 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
+2019-06-17 12:42:23,316 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-17 12:42:23,317 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-17 12:42:23,320 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2019-06-17 12:42:23,884 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4cc075d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 12:42:25,181 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8888 (http)
+2019-06-17 12:42:25,424 INFO org.springframework.web.context.ContextLoader [main] Root WebApplicationContext: initialization completed in 3658 ms
+2019-06-17 12:42:28,453 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-17 12:42:31,267 INFO com.batch.mongo.csv.entity.config.ApplicationConfig [main] Mongo DB data fetching inititated
+2019-06-17 12:42:31,287 INFO com.batch.mongo.csv.entity.config.ApplicationConfig [main] Writer records to csv file
+2019-06-17 12:42:31,937 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-17 12:42:32,071 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-17 12:42:32,288 WARN org.springframework.boot.autoconfigure.batch.JpaBatchConfigurer [main] JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2019-06-17 12:42:32,295 INFO org.springframework.batch.core.repository.support.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: DERBY
+2019-06-17 12:42:32,331 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2019-06-17 12:42:33,105 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-17 12:42:33,115 INFO com.batch.mongo.csv.entity.config.MongoToCsv [main] Started MongoToCsv in 12.206 seconds (JVM running for 13.029)
+2019-06-17 12:42:33,118 INFO org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner [main] Running default command line with: [--spring.config.location=file:config.properties,classpath:application.properties]
+2019-06-17 12:42:33,807 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher [main] Job: [FlowJob: [name=exportUserJob]] launched with the following parameters: [{-spring.config.location=file:config.properties,classpath:application.properties, run.id=1}]
+2019-06-17 12:42:33,978 INFO org.springframework.batch.core.job.SimpleStepHandler [main] Executing step: [step1]
+2019-06-17 12:42:34,412 DEBUG org.springframework.data.mongodb.core.MongoTemplate [main] find using query: { "dob" : { "$gt" : { "$date" : 1572978600000 }, "$lt" : { "$date" : 1573237800000 } } } fields: Document{{}} for class: class com.batch.mongo.csv.entity.MongoDBEntity in collection: information
+2019-06-17 12:42:34,541 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher [main] Job: [FlowJob: [name=exportUserJob]] completed with the following parameters: [{-spring.config.location=file:config.properties,classpath:application.properties, run.id=1}] and the following status: [COMPLETED]
+2019-06-17 12:42:34,549 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-17 12:42:34,558 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-06-17 12:43:10,605 INFO com.batch.mongo.csv.entity.config.MongoToCsv [main] Starting MongoToCsv v0.0.1-SNAPSHOT on BLRL58331 with PID 10752 (C:\DevelopmentTech\Aru\spring\csv\target\csv-0.0.1-SNAPSHOT.jar started by sdevireddy in C:\DevelopmentTech\Aru\spring\csv)
+2019-06-17 12:43:10,610 DEBUG com.batch.mongo.csv.entity.config.MongoToCsv [main] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-06-17 12:43:10,612 INFO com.batch.mongo.csv.entity.config.MongoToCsv [main] No active profile set, falling back to default profiles: default
+2019-06-17 12:43:12,065 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-17 12:43:12,068 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-17 12:43:12,114 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+2019-06-17 12:43:12,161 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-17 12:43:12,162 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-17 12:43:12,164 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-06-17 12:43:12,752 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eae5c63f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 12:43:14,138 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8888 (http)
+2019-06-17 12:43:14,365 INFO org.springframework.web.context.ContextLoader [main] Root WebApplicationContext: initialization completed in 3670 ms
+2019-06-17 12:43:17,551 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-17 12:43:20,734 INFO com.batch.mongo.csv.entity.config.ApplicationConfig [main] Mongo DB data fetching inititated
+2019-06-17 12:43:21,030 INFO com.batch.mongo.csv.entity.config.ApplicationConfig [main] Writer records to csv file
+2019-06-17 12:43:21,616 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-17 12:43:21,736 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-17 12:43:21,968 WARN org.springframework.boot.autoconfigure.batch.JpaBatchConfigurer [main] JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2019-06-17 12:43:21,980 INFO org.springframework.batch.core.repository.support.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: DERBY
+2019-06-17 12:43:22,022 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2019-06-17 12:43:22,777 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-17 12:43:22,781 INFO com.batch.mongo.csv.entity.config.MongoToCsv [main] Started MongoToCsv in 12.887 seconds (JVM running for 13.944)
+2019-06-17 12:43:22,784 INFO org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner [main] Running default command line with: [--spring.config.location=file:config.properties,classpath:application.properties]
+2019-06-17 12:43:23,195 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher [main] Job: [FlowJob: [name=exportUserJob]] launched with the following parameters: [{-spring.config.location=file:config.properties,classpath:application.properties, run.id=1}]
+2019-06-17 12:43:23,358 INFO org.springframework.batch.core.job.SimpleStepHandler [main] Executing step: [step1]
+2019-06-17 12:43:23,667 DEBUG org.springframework.data.mongodb.core.MongoTemplate [main] find using query: { "dob" : { "$gt" : { "$date" : 1572978600000 }, "$lt" : { "$date" : 1573237800000 } } } fields: Document{{}} for class: class com.batch.mongo.csv.entity.MongoDBEntity in collection: information
+2019-06-17 12:43:23,800 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher [main] Job: [FlowJob: [name=exportUserJob]] completed with the following parameters: [{-spring.config.location=file:config.properties,classpath:application.properties, run.id=1}] and the following status: [COMPLETED]
+2019-06-17 12:43:23,818 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-17 12:43:23,829 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-06-17 12:44:06,272 INFO com.batch.mongo.csv.entity.config.MongoToCsv [main] Starting MongoToCsv v0.0.1-SNAPSHOT on BLRL58331 with PID 18752 (C:\DevelopmentTech\Aru\spring\csv\target\csv-0.0.1-SNAPSHOT.jar started by sdevireddy in C:\DevelopmentTech\Aru\spring\csv)
+2019-06-17 12:44:06,276 DEBUG com.batch.mongo.csv.entity.config.MongoToCsv [main] Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-06-17 12:44:06,277 INFO com.batch.mongo.csv.entity.config.MongoToCsv [main] No active profile set, falling back to default profiles: default
+2019-06-17 12:44:07,665 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-17 12:44:07,667 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-17 12:44:07,704 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2019-06-17 12:44:07,750 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-17 12:44:07,751 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-17 12:44:07,753 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-06-17 12:44:08,245 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$56ba7179] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 12:44:09,826 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8888 (http)
+2019-06-17 12:44:10,020 INFO org.springframework.web.context.ContextLoader [main] Root WebApplicationContext: initialization completed in 3661 ms
+2019-06-17 12:44:12,819 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-17 12:44:15,737 INFO com.batch.mongo.csv.entity.config.ApplicationConfig [main] Mongo DB data fetching inititated
+2019-06-17 12:44:15,757 INFO com.batch.mongo.csv.entity.config.ApplicationConfig [main] Writer records to csv file
+2019-06-17 12:44:16,219 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-17 12:44:16,330 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-17 12:44:16,541 WARN org.springframework.boot.autoconfigure.batch.JpaBatchConfigurer [main] JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2019-06-17 12:44:16,545 INFO org.springframework.batch.core.repository.support.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: DERBY
+2019-06-17 12:44:16,581 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2019-06-17 12:44:17,140 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8888 (http) with context path ''
+2019-06-17 12:44:17,144 INFO com.batch.mongo.csv.entity.config.MongoToCsv [main] Started MongoToCsv in 11.54 seconds (JVM running for 12.415)
+2019-06-17 12:44:17,147 INFO org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner [main] Running default command line with: [--spring.config.location=file:config.properties,classpath:application.properties]
+2019-06-17 12:44:17,535 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher [main] Job: [FlowJob: [name=exportUserJob]] launched with the following parameters: [{-spring.config.location=file:config.properties,classpath:application.properties, run.id=1}]
+2019-06-17 12:44:17,661 INFO org.springframework.batch.core.job.SimpleStepHandler [main] Executing step: [step1]
+2019-06-17 12:44:17,911 DEBUG org.springframework.data.mongodb.core.MongoTemplate [main] find using query: { "dob" : { "$gt" : { "$date" : 1572978600000 }, "$lt" : { "$date" : 1573669800000 } } } fields: Document{{}} for class: class com.batch.mongo.csv.entity.MongoDBEntity in collection: information
+2019-06-17 12:44:18,033 DEBUG org.springframework.data.mongodb.core.MongoTemplate [main] find using query: { "dob" : { "$gt" : { "$date" : 1572978600000 }, "$lt" : { "$date" : 1573669800000 } } } fields: Document{{}} for class: class com.batch.mongo.csv.entity.MongoDBEntity in collection: information
+2019-06-17 12:44:18,055 INFO org.springframework.batch.core.launch.support.SimpleJobLauncher [main] Job: [FlowJob: [name=exportUserJob]] completed with the following parameters: [{-spring.config.location=file:config.properties,classpath:application.properties, run.id=1}] and the following status: [COMPLETED]
+2019-06-17 12:44:18,062 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-17 12:44:18,071 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
